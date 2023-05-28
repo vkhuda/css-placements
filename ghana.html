@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ghana flag</title>
+    <style>
+        .flag {
+            background-color: #CF0921;
+            width:900px;
+            height:600px;
+            position:relative;
+        }
+        .rectangle1 {
+            background-color: #FCD20F;
+            width:100%;
+            height:200px;
+            position:absolute;
+            top:200px;
+        }
+        .rectangle2 {
+            background-color: #006B3D;
+            width:100%;
+            height:200px;
+            position:absolute;
+            top:400px;
+        }
+        .star {
+            margin: 50px 0;
+            position: absolute;
+            left: 45%;
+            top: 50%;
+            margin-left: -50px;
+            margin-top: -35px;
+            display: block;
+            color: black;
+            width: 0px;
+            height: 0px;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid black;
+            border-left: 100px solid transparent;
+            transform: rotate(35deg);
+        }
+        .star::before {
+            border-bottom: 80px solid black;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            position: absolute;
+            height: 0;
+            width: 0;
+            top: -45px;
+            left: -65px;
+            display: block;
+            content: '';
+            transform: rotate(-35deg);
+        }
+        .star::after {
+            position: absolute;
+            display: block;
+            color: black;
+            top: 3px;
+            left: -105px;
+            width: 0px;
+            height: 0px;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid black;
+            border-left: 100px solid transparent;
+            transform: rotate(-70deg);
+            content: '';
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <div class="rectangle1"></div>
+        <div class="rectangle2"></div>
+        <div class="star"></div>
+    </div>
+    
+</body>
+</html>
